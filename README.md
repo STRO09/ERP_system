@@ -108,5 +108,5 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📞 Contact
 **Developer**: [Sagar Janjoted](https://github.com/STRO09)  
-**Email**: [sagarjanjoted123@gmail.com](sagarjanjoted123@gmail.com)
+**Email**: [sagarjanjoted123@gmail.com](mailto:sagarjanjoted123@gmail.com)
 ---
