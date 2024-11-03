@@ -1,3 +1,4 @@
+Here's an improved and refined version of your README:
 
 ---
 
@@ -7,7 +8,7 @@
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
-> An enterprise resource planning (ERP) system built with Java, following MVC architecture and **Design by Contract (DbC)** principles. This system offers two main roles with role-specific functionalities: **Sellers** and **Consumers**.
+> An enterprise resource planning (ERP) system built with Java, following MVC architecture and **Design by Contract (DbC)** principles. The system includes distinct functionalities for **Sellers** and **Consumers**.
 
 ---
 
@@ -19,94 +20,110 @@
 - **Seller**
 
 ### 🔹 Seller Capabilities
-- **Product Management**: Add, update, delete products with robust contract-based validation.
-- **Order Management**: View orders and update order status (e.g., *Out for Delivery*, *Shipped*, *Delivered*).
-- **Issue Handling**: View issues reported by consumers, ensuring secure handling of issue data.
+- **Product Management**: Add, update, and delete products with contract-based validation.
+- **Order Management**: View and update order status (e.g., *Out for Delivery*, *Shipped*, *Delivered*).
+- **Issue Handling**: View and handle issues reported by consumers securely.
 
 ### 🔹 Consumer Capabilities
-- **Product Browsing**: View available products with a seamless interface.
+- **Product Browsing**: Browse products through an intuitive interface.
 - **Order Management**: Place orders and view order history.
-- **Issue Reporting**: Report issues related to products.
-- **Profile Management**: Update or delete profile information, with contract-based data integrity.
-- **Issue Tracking**: View and manage reported issues in a streamlined manner.
+- **Issue Reporting**: Report product-related issues.
+- **Profile Management**: Update or delete profile details, ensuring data integrity through contract-based validation.
+- **Issue Tracking**: View and manage reported issues in a streamlined interface.
 
 ---
 
 ## ⚙️ Project Structure
 
-The project is modular, following **Design by Contract** principles to ensure method and class reliability through preconditions, postconditions, and invariants:
+The project is modular and uses **Design by Contract (DbC)** principles to enforce reliable and maintainable code, applying:
 
-- **JSPs**: Presentation layer for front-end views
-- **Servlets**: Controllers to handle HTTP requests and coordinate between UI and business logic
+- **Preconditions**: Conditions that must be true before method execution.
+- **Postconditions**: Conditions that must hold true after method execution.
+- **Invariants**: Conditions that must remain consistent throughout an object’s lifecycle.
+
+### Components
+
+- **JSPs**: Presentation layer for UI views
+- **Servlets**: Controllers to handle HTTP requests, coordinating between UI and business logic
 - **POJOs**: Data modeling objects representing core entities
-- **Interfaces & Implementors**: Define and implement business logic with contract-based validation
-- **DAOs & DAO Implementors**: Data Access Objects for contract-enforced, consistent database interactions
+- **Interfaces & Implementations**: Define and implement business logic with DbC validation
+- **DAOs & DAO Implementors**: Data Access Objects for reliable, contract-based database interactions
 
 ### Key Technologies
 - **Java** for backend logic
-- **JSP/Servlets** for the presentation layer
-- **MySQL** as the database
-- **MVC + Design by Contract (DbC)** for structured, reliable architecture
+- **JSP/Servlets** for the front-end layer
+- **MySQL** for the database
+- **MVC + Design by Contract (DbC)** for robust, modular architecture
 
 ---
 
 ## 🚀 Getting Started
 
-Follow these instructions to set up the project on your local machine.
+Follow these steps to set up the project on your local machine.
 
 ### Prerequisites
 - **Java Development Kit (JDK)**
-- **Apache Tomcat** or similar Java EE server
+- **Apache Tomcat** or another Java EE server
 - **MySQL Database**
 
 ### Installation
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/username/repository-name.git
-   cd repository-name
+   git clone https://github.com/STRO09/ERP_system.git
+   cd ERP_system
    ```
 
 2. **Set Up Database**
-   - Configure your MySQL database settings and execute the provided SQL scripts.
+   - Open the `Sqlscripts` folder in MySQL Workbench and execute all scripts to initialize the database.
 
 3. **Configure Database Properties**
-   - Update the database configuration in the project’s properties file.
+   - Update the database configuration in the application’s properties file.
 
 4. **Deploy on Tomcat**
-   - Deploy the application on Apache Tomcat or another Java EE server.
+   - Deploy the application on Apache Tomcat or your preferred Java EE server.
 
 5. **Run the Application**
-   - Access the application at `http://localhost:8080/your-app-name`.
-
+   - Access the application at `http://localhost:8080/[your-app-name]`.
+   
+For further details on how to run this project on eclipse read the other readme file.
 ---
 
 ## 📂 Folder Structure
 
 ```plaintext
-repository-name/
+ERP_system/
 ├── src/
-│   ├── controller/               # Servlets
-│   ├── model/                    # POJOs
-│   ├── view/                     # JSP files
-│   ├── dao/                      # DAOs and DAOImplementors
-│   ├── service/                  # Business Logic Interfaces & Implementations
-│   └── util/                     # Utility and Helper Classes
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── controllers/              # Servlets for HTTP request handling
+│   │   │   ├── model/                    # POJOs representing core entities
+│   │   │   ├── view/                     # JSP files for front-end views
+│   │   │   ├── dao/                      # DAO Implementations for data access and manipulation logic (Procedure Calls)
+│   │   │   ├── daointerfaces/            # DAO interfaces 
+│   │   │   ├── implementors/             # Utility and helper classes
+│   │   │   ├── interfaces/               # Business Logic Interfaces
+│   │   │   ├── jdbc/                     # Database connection and JDBC handling
+│   │   ├── webapp/
+│   │   │   ├── META-INF/
+│   │   │   │   ├── MANIFEST.MF
+│   │   │   ├── JSP files.....
 └── README.md
 ```
 
 ---
 
 ## 📜 License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
 ---
 
 ## 🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/username/repository-name/issues).
+Contributions, issues, and feature requests are welcome! Please check the [issues page](https://github.com/STRO09/ERP_system/issues).
 
 ---
 
 ## 📞 Contact
 **Developer**: [Sagar Janjoted](https://github.com/STRO09)  
 **Email**: [sagarjanjoted123@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=sagarjanjoted123@gmail.com)
----
+
+--- 
