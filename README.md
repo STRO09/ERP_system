@@ -54,7 +54,7 @@ The project is modular and uses **Design by Contract (DbC)** principles to enfor
 
 ---
 
-##🚀 Getting Started
+## 🚀 Getting Started
 
 
 Follow these instructions to set up the project from GitHub on your local machine.
