@@ -60,12 +60,9 @@ The project is modular and uses **Design by Contract (DbC)** principles to enfor
 Follow these instructions to set up the project from GitHub on your local machine.
 
 ### Prerequisites
-- **Java Development Kit (JDK)**
- - Download and install the latest JDK if not already installed.
-- **Apache Tomcat or another Java EE server**
- - Download and install a server like Apache Tomcat.
-- **MySQL Database**
- - Download and install MySQL, and make sure MySQL Workbench is set up.
+- **Java Development Kit (JDK)**: Download and install the latest JDK if not already installed.
+- **Apache Tomcat or another Java EE server**: Download and install a server like Apache Tomcat.
+- **MySQL Database**: Download and install MySQL, and make sure MySQL Workbench is set up.
 
 
 ### Installation Steps
