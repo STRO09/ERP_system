@@ -54,35 +54,66 @@ The project is modular and uses **Design by Contract (DbC)** principles to enfor
 
 ---
 
-## 🚀 Getting Started
+##🚀 Getting Started
 
-Follow these steps to set up the project on your local machine.
+
+Follow these instructions to set up the project from GitHub on your local machine.
 
 ### Prerequisites
 - **Java Development Kit (JDK)**
-- **Apache Tomcat** or another Java EE server
+ - Download and install the latest JDK if not already installed.
+- **Apache Tomcat or another Java EE server**
+ - Download and install a server like Apache Tomcat.
 - **MySQL Database**
+ - Download and install MySQL, and make sure MySQL Workbench is set up.
 
-### Installation
+
+### Installation Steps
 1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/STRO09/ERP_system.git
-   cd ERP_system
-   ```
 
-2. **Set Up Database**
-   - Open the `Sqlscripts` folder in MySQL Workbench and execute all scripts to initialize the database.
+-Clone the project from GitHub using the following command:
+```bash
+git clone https://github.com/STRO09/ERP_system.git
+cd ERP_system
+```
+
+2. **Set Up the Database**
+
+-Open MySQL Workbench.
+Navigate to the `Sqlscripts` folder in your cloned repository.
+Execute all SQL scripts in MySQL Workbench to initialize the database for the project.
 
 3. **Configure Database Properties**
-   - Update the database configuration in the application’s properties file.
 
-4. **Deploy on Tomcat**
-   - Deploy the application on Apache Tomcat or your preferred Java EE server.
+-Locate the configuration file(config.properties) for database settings.
+Update the file with your MySQL credentials and connection details, such as:
+properties
+```bash
+db.url=jdbc:mysql://localhost:3306/your_database_name
+db.username=your_username
+db.password=your_password
+```
 
-5. **Run the Application**
-   - Access the application at `http://localhost:8080/[your-app-name]`.
-   
-For further details on how to run this project on eclipse read the other readme file.
+4. **Import the Project into Eclipse**
+
+-Open Eclipse IDE.
+Go to File > Import > Existing Projects into Workspace.
+Select the cloned repository folder (ERP_system) and import it as an existing project.
+Set Up the Apache Tomcat Server
+
+In Eclipse, go to Window > Show View > Servers.
+Right-click in the Servers view and choose New > Server.
+Select Apache Tomcat and specify the installation directory if required.
+Once set up, right-click the server and choose Add and Remove..., then add your project to the server.
+
+5. **Deploy the Application on Tomcat**
+
+Right-click on the server and choose Start or Restart.
+This will deploy your application on Apache Tomcat. The server console should show logs indicating a successful deployment.
+
+6. **Access the Application**
+
+Open a web browser and go to `http://localhost:8080/[your-app-name]` to access your application.
 ---
 
 ## 📂 Folder Structure
