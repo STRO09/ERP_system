@@ -86,6 +86,7 @@ Execute all SQL scripts in MySQL Workbench to initialize the database for the pr
 Update the file with your MySQL credentials and connection details, such as:
 properties
 ```bash
+db.Driver=com.mysql.cj.jdbc.Driver (or) com.mysql.jdbc.Driver
 db.url=jdbc:mysql://localhost:3306/your_database_name
 db.username=your_username
 db.password=your_password
