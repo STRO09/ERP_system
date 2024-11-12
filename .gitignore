@@ -18,6 +18,9 @@
 .classpath
 .project
 .settings/
+*.settings
+.settings
+*.settings/
 
 # Ignore configuration and environment files
 *.properties
