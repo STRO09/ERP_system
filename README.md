@@ -82,7 +82,7 @@ Execute all SQL scripts in MySQL Workbench to initialize the database for the pr
 
 3. **Configure Database Properties**
 
--Locate the configuration file(config.properties) for database settings.
+-Create the configuration file(config.properties) for database settings in WEB-INF in a new folder named classes.
 Update the file with your MySQL credentials and connection details, such as:
 properties
 ```bash
