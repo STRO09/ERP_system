@@ -9,7 +9,7 @@
 
 ---
 
-## 🛠 Features
+## 🛠 FEATURES
 
 ### 👤 Roles
 
