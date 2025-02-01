@@ -149,7 +149,7 @@ Contributions, issues, and feature requests are welcome! Please check the [issue
 ---
 
 ## 📞 Contact
-**Developer**: [Sagar Janjoted](https://github.com/STRO09)  
+**Developer**: [Sagar Vinod Janjoted](https://github.com/STRO09)  
 **Email**: [sagarjanjoted123@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=sagarjanjoted123@gmail.com)
 
 --- 
